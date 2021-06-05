@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using System;
 
 namespace FactoryPattern
 {
@@ -6,8 +7,11 @@ namespace FactoryPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Hello World!");
+            var ingredients=new List<string>();
+            ingredients.Add("Cheese");
+            ingredients.Add("Chilli");
+            var NewYorkPizza= SimplePizzaFactory.CreatePizza(PizzaType.NewYork,ingredients);
+            Console.WriteLine(NewYorkPizza.Toppings[1]+NewYorkPizza.Seasonings);
         }
     }
     
