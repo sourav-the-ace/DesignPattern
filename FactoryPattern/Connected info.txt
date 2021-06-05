@@ -1,0 +1,15 @@
+A bad pattern is to new something and use it imediately 
+A good pattern is to let something else to new it and then it just return the instance.
+
+Abstract class can not be instantiated, means it can not make object.It only can be inherited to implement or override it's method.
+An abstract class can have constructors—this is one major difference between an abstract class and an interface.
+
+Interface is basically a contract, it doesn't have any implementation but only declaration.
+Whereas an abstract class may contain method definitions, fields, and constructors, an interface may only have declarations of events, methods, and properties. 
+
+Abstract classes provide you the flexibility to have certain concrete methods and some other methods that the derived classes should implement
+It is easy to add a new interface to the hierarchy if need be. However, if you already have an abstract class in your hierarchy, you can’t add another.
+
+
+FactoryMethodPattern says take the newing of something and instead of newing and using right away delagate it 
+essentially to specific object that incharge of creating it.
